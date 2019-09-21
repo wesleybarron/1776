@@ -12,7 +12,8 @@ function config($key = '') {
         'site_url' => '[FIXME: ADD URL!]]',
         'nav_menu' => [
             '' => 'Home',
-            'search' => 'Search'
+            'search' => 'Search',
+            'about-us' => 'About Us'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
