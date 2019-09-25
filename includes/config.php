@@ -7,9 +7,9 @@
  */
 function config($key = '') {
     $config = [
-        'name' => '[FIXME: ADD SITE TITLE!]',
+        'name' => 'Film Buff',
         'pretty_uri' => false,
-        'site_url' => '[FIXME: ADD URL!]]',
+        'site_url' => 'https://filmbuff1776.herokuapp.com/',
         'nav_menu' => [
             '' => 'Home',
             'search' => 'Search',
