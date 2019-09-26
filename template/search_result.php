@@ -31,9 +31,9 @@ $output = "<ul>";
 foreach ($response['Search'] as $movie) {
 $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
 $output .= "<li style='text-align:center;'>".$movie['Year']."</li>";
-$output .= "<div style='margin:auto;'>"
+$output .= "<div style='margin:auto;'>";
 $output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px' alt='Comming Soon!'>";
-$output .= "</div>"
+$output .= "</div>";
 }
 $output .= "</ul>";
 echo $output;
