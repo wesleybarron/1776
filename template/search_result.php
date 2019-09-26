@@ -24,14 +24,16 @@ $output = curl_exec($handle);
 $response = json_decode($output, true);
 curl_close($handle);
 
-$upper_search_key = stringtoupper($search_key);
+$upper_search_key = strtoupper($search_key);
 echo "<h1 style='text-align:center;'>Movie Results For: " . $upper_search_key . "</h1>";
 
 $output = "<ul>";
 foreach ($response['Search'] as $movie) {
 $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
 $output .= "<li style='text-align:center;'>".$movie['Year']."</li>";
-$output .= "<img style='margin:auto;' src='" . $movie['Poster'] . "' width='250px' height='300px' alt='Comming Soon!'>";
+$output .= "<div style='margin:auto;'>"
+$output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px' alt='Comming Soon!'>";
+$output .= "</div>"
 }
 $output .= "</ul>";
 echo $output;
