@@ -21,21 +21,3 @@ nav .item {
 nav .active {
     border-bottom: 1px solid;
 }
-
-.btn btn-success {
-    width: 250px;
-}
-
-
-li {
-    text-decoration: none;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-img {
-    text-align: center;
-}
