@@ -1,4 +1,4 @@
-
+<html style="background-color: cornsilk;">
 
 <?php
 
@@ -38,3 +38,5 @@ $output .= "</div>";
 $output .= "</ul>";
 echo $output;
 ?>
+
+</html>
