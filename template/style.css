@@ -23,13 +23,19 @@ nav .active {
 }
 
 .btn btn-success {
-    width: 50px;
+    width: 250px;
 }
 
-.searchDiv {
+
+li {
+    text-decoration: none;
     text-align: center;
 }
 
-ul {
-    text-decoration: none;
+h3 {
+    text-align: center;
+}
+
+img {
+    text-align: center;
 }

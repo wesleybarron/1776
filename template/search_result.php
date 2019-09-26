@@ -20,12 +20,12 @@ $output = curl_exec($handle);
 $response = json_decode($output, true);
 curl_close($handle);
 
-$output = "<div class='searchDiv'><ul class='searchResult'>";
+$output = "<ul>";
 foreach ($response['Search'] as $movie) {
 $output .= "<h3>".$movie['Title']."</h3>";
 $output .= "<li>".$movie['Year']."</li>";
 $output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px' alt='Comming Soon!'>";
 }
-$output .= "</ul></div>";
+$output .= "</ul>";
 echo $output;
 ?>
