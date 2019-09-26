@@ -24,15 +24,15 @@ function site_version() {
 /**
  * Website navigation.
  */
-function nav_menu($sep = ' | ') {
+function nav_menu() {
     $nav_menu = '';
     $nav_items = config('nav_menu');
     foreach ($nav_items as $uri => $name) {
         $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
         $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . '</a>' . $sep;
+        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . "nbsp;" . "nbsp;" . "nbsp;" . '</a>';
     }
-    echo trim($nav_menu, $sep);
+    echo trim($nav_menu);
 }
 
 /**
