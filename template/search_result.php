@@ -20,7 +20,7 @@ $output = curl_exec($handle);
 $response = json_decode($output, true);
 curl_close($handle);
 
-$output = "<ul>";
+$output = "<ul class='searchResult'>";
 foreach ($response['Search'] as $movie) {
 $output .= "<h3>".$movie['Title']."</h3>";
 $output .= "<li>".$movie['Year']."</li>";
