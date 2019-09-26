@@ -2,7 +2,7 @@
 
 <?php
 
-echo "<div id='search-result-div'><h1 style='text-align:center;'>Movie Results For: " . $search_key . "</h1></div>"
+echo "<div id='search-result-div'><h1 style='text-align:center;'>Movie Results For: " . $search_key . "</h1></div>";
 
 $url = "http://www.omdbapi.com/?s=";
 
