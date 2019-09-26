@@ -8,13 +8,24 @@
     <link href="/template/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#"><?php site_name(); ?></a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><?php nav_menu(); ?></a>
+    </li>
+  </ul>
+</nav>
+
+
 <div class="wrap">
 
     <header>
-        <h1><?php site_name(); ?></h1>
-        <nav class="menu">
-            <?php nav_menu(); ?>
-        </nav>
+        <div class="jumbotron><h1><?php site_name(); ?></h1></div>
     </header>
 
     <article>
