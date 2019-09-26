@@ -26,6 +26,10 @@ nav .active {
     width: 50px;
 }
 
-.searchResult {
+.searchDiv {
     text-align: center;
+}
+
+ul {
+    text-decoration: none;
 }
