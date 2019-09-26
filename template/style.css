@@ -21,3 +21,7 @@ nav .item {
 nav .active {
     border-bottom: 1px solid;
 }
+
+.nav-link {
+    text-decoration: none;
+}
