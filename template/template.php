@@ -25,7 +25,7 @@
 <div class="wrap">
 
     <header>
-        <div class="jumbotron><h1><?php site_name(); ?></h1></div>
+        <div class="jumbotron"><h1><?php site_name(); ?></h1></div>
     </header>
 
     <article>
