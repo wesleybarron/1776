@@ -25,3 +25,8 @@ nav .active {
 .nav-link {
     text-decoration: none;
 }
+
+#nav-id {
+    text-decoration: none;
+    color: white;
+}
