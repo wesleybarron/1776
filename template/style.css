@@ -19,14 +19,14 @@ nav .item {
     text-decoration: none;
 }
 nav .active {
-    border-bottom: 1px solid;
+    color: silver;
 }
 
 .nav-link {
     text-decoration: none;
 }
 
-#nav-id {
+a {
     text-decoration: none;
     color: white;
 }
