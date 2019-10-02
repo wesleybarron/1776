@@ -34,7 +34,7 @@ $output .= "<li style='text-align:center;list-style-type:none;'>".$movie['Year']
 $output .= "<div style='margin:auto;text-align:center;'>";
 
 if ($movie['Poster'] == "N/A") {
-    $output .= "<img src='https://media1.giphy.com/media/l46Cmwy8HWPsMcmw8/giphy.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=giphy.webp' width='250px' height='300px'>";
+    $output .= "<img src='https://media2.giphy.com/media/d2ZhZTK55EA2yvTy/200.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=200.webp' width='250px' height='300px'>";
     }else {
         $output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px'>";
     }
