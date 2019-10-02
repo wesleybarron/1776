@@ -30,7 +30,7 @@ function nav_menu() {
     foreach ($nav_items as $uri => $name) {
         $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
         $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
-        $nav_menu .= '<a href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . "&nbsp;" . "&nbsp;" . "&nbsp;" . '</a>';
+        $nav_menu .= '<a id="nav-id" href="' . $url . '" title="' . $name . '" class="item ' . $class . '">' . $name . "&nbsp;" . "&nbsp;" . "&nbsp;" . '</a>';
     }
     echo trim($nav_menu);
 }
