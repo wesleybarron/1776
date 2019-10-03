@@ -25,6 +25,9 @@
 <div>
       <div class="mx-auto jumbotron jumbotron-fluid">
         <div class="container">
+          <div class="media">
+            <img src="/assets/filmbuff.png" class="mr-3" alt="icon">
+          </div>
           <h1 class="display-4"><?php site_name(); ?></h1>
         </div>
       </div>
