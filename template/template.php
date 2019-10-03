@@ -28,7 +28,7 @@
           <div class="media">
             <img src="/assets/filmbuff.png" class="align-self-center mr-3" width="100" height="100"alt="icon">
             <div class="media-body">
-              <h1 class="display-4"><?php site_name(); ?></h1>
+              <h1 class="mt-0 display-4"><?php site_name(); ?></h1>
             </div>
           </div>
         </div>
