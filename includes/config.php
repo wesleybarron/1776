@@ -7,7 +7,7 @@
  */
 function config($key = '') {
     $config = [
-        'name' => 'Film Buff',
+        'name' => 'filmBUFF',
         'pretty_uri' => false,
         'site_url' => 'https://filmbuff1776.herokuapp.com/',
         'nav_menu' => [
