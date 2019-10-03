@@ -24,8 +24,10 @@
 
 <div>
     <div class="row">
-      <div class="w-auto jumbotron">
-        <h1><?php site_name(); ?></h1>
+      <div class="mx-auto jumbotron">
+        <div class="container">
+          <h1><?php site_name(); ?></h1>
+        </div>
       </div>
     </div>
   <div class ="row">
