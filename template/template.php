@@ -24,9 +24,9 @@
 
 <div>
     <div class="row">
-      <div class="mx-auto jumbotron">
+      <div class="mx-auto jumbotron jumbotron-fluid">
         <div class="container">
-          <h1><?php site_name(); ?></h1>
+          <h1 class="display-4"><?php site_name(); ?></h1>
         </div>
       </div>
     </div>
