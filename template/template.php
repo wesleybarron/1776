@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand/logo -->
     <a class="navbar-brand" href="#"><?php site_name(); ?></a>
 
