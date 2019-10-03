@@ -9,33 +9,39 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="#"><?php site_name(); ?></a>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#"><?php site_name(); ?></a>
 
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#"><?php nav_menu(); ?></a>
-    </li>
-  </ul>
-</nav>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><?php nav_menu(); ?></a>
+      </li>
+    </ul>
+  </nav>
 
 
-<div class="wrap">
-
-    <header>
-        <div class="jumbotron"><h1><?php site_name(); ?></h1></div>
-    </header>
-
-    <article>
+<div>
+    <div class="row">
+      <div class="mx-auto jumbotron"><h1><?php site_name(); ?></h1>
+      </div>
+    </div>
+  <div class ="row">
+    <div class="mx-auto">
+      <article>
         <h2><?php page_title(); ?></h2>
         <?php page_content(); ?>
-    </article>
-
-    <footer>
-        <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
-    </footer>
+      </article>
+    </div>
+  </div>
+  <div class="row">
+    <div class="mx-auto">
+      <footer>
+          <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
+      </footer>
+    </div>
+  </div>
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
