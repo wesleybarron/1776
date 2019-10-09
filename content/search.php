@@ -12,8 +12,6 @@
 </div>
 <div class="row">
   <div id = "target_div">
-    <?php
-      require 'template/search_result.php';
-    ?>
+    
   </div>
 </div>
