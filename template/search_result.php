@@ -1,7 +1,7 @@
 <?php
 
 if (isset ($_POST['search'])){
-    performsearch();
+    performSearch();
 } else{
     echo 'fail';
 };
