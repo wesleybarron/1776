@@ -56,14 +56,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-  $('#dosearch').on("click", function(e){
+  $('#dosearch').click(function(e){
     $.ajax({
       type: 'post',
-      url: "/template/search_result.php",
-      data:{'search' : true},
+      url: "/includes/search_result.php",
+      data: {'search' : true},
       dataType: "HTML",
       success: function(data){
-        $('div #target_div').html(data);
+        $('div #target_div').html(data)
       },
       error: function(){
         alert("Failed to get data.");
