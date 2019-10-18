@@ -60,7 +60,7 @@
     $.ajax({
       type: 'post',
       url: "/includes/search_result.php",
-      data: {'search' : true},
+      data: {'search' : "name"},
       dataType: "HTML",
       success: function(data){
         $('div #target_div').html(data)
