@@ -56,7 +56,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-  $('contact').on('submit', function(e){
+  $('contact').submit(function(e){
     e.preventDefault();
     $.ajax({
       type: 'post',
@@ -66,7 +66,7 @@
       success: function(data){
         $('div #target_div').html(data)
       },
-      error: function(){
+      error: function(data){
         alert("Failed to get data.");
       }
     });
