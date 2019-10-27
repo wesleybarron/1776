@@ -56,11 +56,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-  $('#contact').submit(function(e){
+  $('contact').on('submit', function(e){
+    e.preventDefault();
     $.ajax({
       type: 'post',
       url: "/includes/search_result.php",
-      data: {'search' : "name"},
+      data: $('contact').serialize();
       dataType: "HTML",
       success: function(data){
         $('div #target_div').html(data)
