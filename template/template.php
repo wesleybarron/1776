@@ -56,15 +56,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-  $('contact').submit(function(e){
+  var form = $('#contact');
+  form.submit(function(e){
     e.preventDefault();
     $.ajax({
-      type: 'post',
-      url: "/includes/search_result.php",
-      data: $('contact').serialize();
+      type: form.attr('method'),
+      url: form.attr('action'),
+      data: form.serialize();
       dataType: "HTML",
       success: function(data){
-        $('div #target_div').html(data)
+        $('#target_div').html(data)
       },
       error: function(data){
         alert("Failed to get data.");
