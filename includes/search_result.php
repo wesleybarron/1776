@@ -1,11 +1,5 @@
 <?php
 
-if (isset ($_POST['search'])){
-    performSearch();
-} else{
-    echo 'fail';
-};
-
 function performSearch(){
     $url = "http://www.omdbapi.com/?s=";
 
