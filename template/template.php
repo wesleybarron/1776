@@ -57,7 +57,7 @@
 
 <script>
   var form = $('#contact');
-  form.submit(function(e){
+  form.on('click', (function(e){
     e.preventDefault();
     $.ajax({
       type: form.attr('method'),
