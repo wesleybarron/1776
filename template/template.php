@@ -72,7 +72,7 @@
       }
     });
     return false;
-  )}
+  });
 </script>
 
 </html>
