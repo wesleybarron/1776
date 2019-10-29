@@ -10,14 +10,14 @@
     </form>
   </div>
 </div>
-/*
+
 <div class="row">
   <div id = "target_div">
 
   </div>
 
-<div class="container">
-*/
+
+
 <?php
 $url = "http://www.omdbapi.com/?s=";
 
@@ -43,10 +43,10 @@ $url = "http://www.omdbapi.com/?s=";
     //str_replace("+", " ", $upper_search_key);
     $output = "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
 
-    $output .= "<div>";
+     $output .= "<div class='container'>";
 
     foreach ($response['Search'] as $movie) {
-    $output .= "<div class='container'>";
+
     $output .= "<div class='row'>";
     $output .= "<div class='col-md-3'>";
     $output .= "<h3>".$movie['Title']."</h3>";
@@ -65,6 +65,6 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "</div>";
     echo $output;
 ?>
-  </div>
+
 
 </div>
