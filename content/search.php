@@ -1,10 +1,10 @@
 <div class = "row">
   <div id = "search_form">
-    <form id="contact" action="" method ="POST">
+    <form id="contact" action="" method ="post">
       <div class="input-group mb-3">
         <input name="name" type="text" class="form-control" placeholder="Movie Title">
         <div class="input-group-append"><br>
-          <button name="submit" id= "dosearch" type= "button" class="btn btn-success" type="submit">Search</button>
+          <button name="submit" id= "dosearch" class="btn btn-success" type="submit">Search</button>
         </div>
       </div>
     </form>
