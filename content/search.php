@@ -49,9 +49,9 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "<div class='container'>";
     $output .= "<div class='row'>";
     $output .= "<div class='col-md-3'>";
-    $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
-    $output .= "<li style='text-align:center;list-style-type:none;'>".$movie['Year']."</li>";
-    $output .= "<div style='margin:auto;text-align:center;'>";
+    $output .= "<h3>".$movie['Title']."</h3>";
+    $output .= "<li style='list-style-type:none;'>".$movie['Year']."</li>";
+    //$output .= "<div style='margin:auto;text-align:center;'>";
 
     if ($movie['Poster'] == "N/A") {
         $output .= "<img src='https://media2.giphy.com/media/d2ZhZTK55EA2yvTy/200.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=200.webp' width='250px' height='300px'>";
