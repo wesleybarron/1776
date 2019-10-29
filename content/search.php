@@ -1,6 +1,6 @@
 <div class = "row">
   <div id = "search_form">
-    <form id="contact" action="search.php" method ="post">
+    <form id="contact" action="" method ="post">
       <div class="input-group mb-3">
         <input name="name" type="text" class="form-control" placeholder="Movie Title">
         <div class="input-group-append"><br>
