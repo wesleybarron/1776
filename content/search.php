@@ -16,7 +16,7 @@
 
   </div>
 
-<div class="col-sm-3">
+<div>
 
 <?php
 $url = "http://www.omdbapi.com/?s=";
