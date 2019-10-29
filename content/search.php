@@ -40,10 +40,11 @@ $url = "http://www.omdbapi.com/?s=";
 
     $output .= "<div class='container'>";
     $output .= "<div class='row'>";
-    $output .= "<div class='col-md-3'>";
+
 
     foreach ($response['Search'] as $movie) {
 
+    $output .= "<div class='col-md-3'>";
     $output .= "<h3>".$movie['Title']."</h3>";
     $output .= "<li style='list-style-type:none;'>".$movie['Year']."</li>";
     //$output .= "<div style='margin:auto;text-align:center;'>";
@@ -54,8 +55,10 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px'>";
         }
 
-    }
     $output .= "</div>";
+
+    }
+
     $output .= "</div>";
     $output .= "</div>";
     echo $output;
