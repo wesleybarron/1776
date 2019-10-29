@@ -16,7 +16,8 @@
 
   </div>
 
-<div class="row">
+<div class="col-sm-3">
+
 <?php
 $url = "http://www.omdbapi.com/?s=";
 
@@ -39,8 +40,8 @@ $url = "http://www.omdbapi.com/?s=";
     curl_close($handle);
 
     $upper_search_key = strtoupper($search_key);
-    str_replace("+", " ", $upper_search_key);
-    echo "<h1 style='text-align:center;'>Movie Results For: " . $upper_search_key . "</h1>";
+    //str_replace("+", " ", $upper_search_key);
+    echo "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
 
     $output = "<ul>";
     foreach ($response['Search'] as $movie) {
