@@ -15,8 +15,8 @@
 
   </div>
 
+<div>
 <?php
-
 $url = "http://www.omdbapi.com/?s=";
 
     $search_key = $_GET["name"];
@@ -56,7 +56,7 @@ $url = "http://www.omdbapi.com/?s=";
     }
     $output .= "</ul>";
     echo $output;
-
-  ?>
+?>
+  </div>
 
 </div>
