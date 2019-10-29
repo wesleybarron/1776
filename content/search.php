@@ -12,7 +12,10 @@
 </div>
 <div class="row">
   <div id = "target_div">
-  <?php
+
+  </div>
+
+<?php
 
 $url = "http://www.omdbapi.com/?s=";
 
@@ -55,5 +58,5 @@ $url = "http://www.omdbapi.com/?s=";
     echo $output;
 
   ?>
-  </div>
+
 </div>
