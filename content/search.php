@@ -41,9 +41,9 @@ $url = "http://www.omdbapi.com/?s=";
 
     $upper_search_key = strtoupper($search_key);
     //str_replace("+", " ", $upper_search_key);
-    echo "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
+    $output = "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
 
-    $output = "<div>";
+    $output .= "<div>";
 
     foreach ($response['Search'] as $movie) {
     $output .= "<div class='container'>";
