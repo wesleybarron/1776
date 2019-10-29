@@ -11,11 +11,6 @@
   </div>
 </div>
 
-<div class="row">
-  <div id = "target_div">
-
-  </div>
-
 
 
 <?php
