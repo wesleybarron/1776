@@ -1,1 +1,1 @@
-FIXME: add contents!
+Welcome to FilmBuff!
