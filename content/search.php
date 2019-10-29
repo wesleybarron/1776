@@ -43,9 +43,11 @@ $url = "http://www.omdbapi.com/?s=";
     //str_replace("+", " ", $upper_search_key);
     echo "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
 
+    $output = "<div>";
+
+    foreach ($response['Search'] as $movie) {
     $output = "<div class='col-md-3'>";
     $output = "<div class='well text-center'>";
-    foreach ($response['Search'] as $movie) {
     $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
     $output .= "<li style='text-align:center;list-style-type:none;'>".$movie['Year']."</li>";
     $output .= "<div style='margin:auto;text-align:center;'>";
@@ -56,6 +58,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<img src='" . $movie['Poster'] . "' width='250px' height='300px'>";
         }
 
+    $output .= "</div>";
     $output .= "</div>";
     }
     $output .= "</div>";
