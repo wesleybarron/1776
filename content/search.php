@@ -10,14 +10,14 @@
     </form>
   </div>
 </div>
-<!--
+/*
 <div class="row">
   <div id = "target_div">
 
   </div>
 
 <div class="container">
--->
+*/
 <?php
 $url = "http://www.omdbapi.com/?s=";
 
