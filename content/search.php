@@ -46,8 +46,8 @@ $url = "http://www.omdbapi.com/?s=";
     $output = "<div>";
 
     foreach ($response['Search'] as $movie) {
-    $output = "<div class='col-md-3'>";
-    $output = "<div class='well text-center'>";
+    $output .= "<div class='col-md-3'>";
+    $output .= "<div class='well text-center'>";
     $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
     $output .= "<li style='text-align:center;list-style-type:none;'>".$movie['Year']."</li>";
     $output .= "<div style='margin:auto;text-align:center;'>";
