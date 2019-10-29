@@ -1,6 +1,6 @@
 <div class = "row">
   <div id = "search_form">
-    <form id="contact" action="" method ="post">
+    <form id="contact" action="search.php" method ="post">
       <div class="input-group mb-3">
         <input name="name" type="text" class="form-control" placeholder="Movie Title">
         <div class="input-group-append"><br>
@@ -43,7 +43,8 @@ $url = "http://www.omdbapi.com/?s=";
     //str_replace("+", " ", $upper_search_key);
     echo "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
 
-    $output = "<ul>";
+    $output = "<div class='col-md-3'>";
+    $output = "<div class='well text-center'>";
     foreach ($response['Search'] as $movie) {
     $output .= "<h3 style='text-align:center;'>".$movie['Title']."</h3>";
     $output .= "<li style='text-align:center;list-style-type:none;'>".$movie['Year']."</li>";
@@ -57,7 +58,7 @@ $url = "http://www.omdbapi.com/?s=";
 
     $output .= "</div>";
     }
-    $output .= "</ul>";
+    $output .= "</div>";
     echo $output;
 ?>
   </div>
