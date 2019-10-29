@@ -16,8 +16,8 @@
 
   </div>
 
-<div>
-
+<div class="container">
+<div class="row">
 <?php
 $url = "http://www.omdbapi.com/?s=";
 
