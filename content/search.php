@@ -1,6 +1,6 @@
 <div class = "row">
   <div id = "search_form">
-    <form id="contact" action="" method ="post" onsubmit="<? getMovie(); ?>">
+    <form id="contact" action="" method ="post">
       <div class="input-group mb-3">
         <input name="name" type="text" class="form-control" placeholder="Movie Title">
         <div class="input-group-append"><br>
@@ -66,6 +66,10 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "</div>";
     $output .= "</div>";
     echo $output;
+}
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+getMovie();
 }
 ?>
 
