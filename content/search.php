@@ -21,7 +21,6 @@ $url = "http://www.omdbapi.com/?s=";
     trim($search_key);
     strtolower($search_key);
     //$search_key = str_replace(" ", "+", $search_key);
-    echo($search_key);
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $search_key . $api_key;
 
