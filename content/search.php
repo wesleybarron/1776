@@ -23,7 +23,7 @@ $url = "http://www.omdbapi.com/?s=";
     $search_key = str_replace(" ", "+", $search_key);
 
     $api_key = "&apikey=d42aca4a";
-    $search_url = $url . $trimed_key . $api_key;
+    $search_url = $url . $search_key . $api_key;
 
     $handle = curl_init();
     curl_setopt($handle, CURLOPT_URL, $search_url);
