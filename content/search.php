@@ -14,6 +14,7 @@
 
 
 <?php
+function getMovie(){
 $url = "http://www.omdbapi.com/?s=";
 
     $search_key = $_POST["name"];
@@ -65,7 +66,7 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "</div>";
     $output .= "</div>";
     echo $output;
+}
 ?>
 
 
-</div>
