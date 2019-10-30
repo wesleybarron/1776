@@ -17,11 +17,10 @@
 function getMovie(){
 $url = "http://www.omdbapi.com/?s=";
 
-    $search_key = $_POST["name"];
+    $search_key = trim($_POST["name"]);
     strtolower($search_key);
     $search_key = str_replace(" ", "+", $search_key);
 
-    $trimed_key = ltrim($search_key);
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $trimed_key . $api_key;
 
