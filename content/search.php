@@ -2,7 +2,7 @@
   <div id = "search_form">
     <form id="contact" action="" method ="post">
       <div class="input-group mb-3">
-        <input name="name" type="text" class="form-control" placeholder="Movie Title">
+        <input name="name" type="text" class="form-control" placeholder="Movie Title" required>
         <div class="input-group-append"><br>
           <button name="submit" id= "dosearch" class="btn btn-success" type="submit">Search</button>
         </div>
@@ -20,9 +20,10 @@ $url = "http://www.omdbapi.com/?s=";
     $search_key = $_POST["name"];
     strtolower($search_key);
     $search_key = str_replace(" ", "+", $search_key);
-    $search_key = trim($search_key, " ");
+
+    $trimed_key = trim($search_key, " ");
     $api_key = "&apikey=d42aca4a";
-    $search_url = $url . $search_key . $api_key;
+    $search_url = $url . $trimed_key . $api_key;
 
     $handle = curl_init();
     curl_setopt($handle, CURLOPT_URL, $search_url);
