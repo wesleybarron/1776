@@ -77,7 +77,6 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<br>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
-            $output .= "<br>";
             $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
             $output .= "<br><br>";
         }
@@ -89,7 +88,7 @@ $url = "http://www.omdbapi.com/?s=";
 
     $output .= "</div>";
     $output .= "</div>";
-    $output .= "<br>";
+    $output .= "<br><br>";
     echo $output;
 }
 
