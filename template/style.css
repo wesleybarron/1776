@@ -10,13 +10,13 @@ nav .active {
 }
 
 .col-md-3 .well{
-    height: 25%;
-    width: 45%;
+    height: 15%;
+    width: 75%;
 }
 
 .col-md-3 img{
-    height: 80%;
-    width: 45%;
+    height: 100%;
+    width: 75%;
 }
 
 a {
