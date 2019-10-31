@@ -23,18 +23,9 @@
 
 
 <div>
-  <div class ="row">
-    <div class="mx-auto">
-      <article>
-        <h2><?php page_title(); ?></h2>
-      </article>
-    </div>
-  </div>
-  <div class ="row">
     <div class="mx-auto">
         <?php page_content(); ?>  
     </div>
-  </div>
   <div class="row">
     <div class="mx-auto">
       <footer>
