@@ -10,6 +10,11 @@ nav .active {
 }
 
 @media(min-width:768px){
+
+#dosearch button{
+    text-align: center;
+}
+
 .col-md-3 .well{
     height: 95%;
     background-color: silver;
