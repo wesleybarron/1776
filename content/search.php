@@ -54,13 +54,12 @@ $url = "http://www.omdbapi.com/?s=";
     $upper_search_key = strtoupper($search_key);
     //str_replace("+", " ", $upper_search_key);
     $output = "<h1 style='text-align:center;'>Movie Results For: " . str_ireplace("+", " ", $upper_search_key) . "</h1>";
+    $output .= "<br>";
 
     $output .= "<div class='container'>";
     $output .= "<div class='row'>";
 
-
     foreach ($response['Search'] as $movie) {
-
 
     $output .= "<div class='col-md-3'>";
     $output .= "<div class='well text-center'>";
@@ -69,10 +68,14 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<img src='https://media2.giphy.com/media/d2ZhZTK55EA2yvTy/200.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=200.webp' width='40%' height='45%'>";
         $output .= "<h4>".$movie['Title']."</h4>";
         $output .= "<h6>".$movie['Year']."</h6>";
+        $output .= "<br>";
+        $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
         }else {
             $output .= "<img src='" . $movie['Poster'] . "' width='40%' height='45%'>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
+            $output .= "<br>";
+            $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
         }
 
     $output .= "</div>";
