@@ -18,9 +18,7 @@ function getMovie(){
 $url = "http://www.omdbapi.com/?s=";
 
     $search_key = $_POST["name"];
-    if(!is_string($search_key)){
-        echo "<h1>Please enter a valid Movie Title</h1>";
-    }
+    if(is_string($search_key)){
 
     $search_key = ltrim($search_key, " ");
     $search_key = ltrim($search_key, "+");
@@ -81,6 +79,9 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "</div>";
     $output .= "</div>";
     echo $output;
+    }else{
+        echo "<h1>Please enter a valid Movie Title</h1>";
+    }
 }
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
