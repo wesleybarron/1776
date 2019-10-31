@@ -66,13 +66,13 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "<div class='well text-center'>";
 
     if ($movie['Poster'] == "N/A") {
-        $output .= "<img src='https://media2.giphy.com/media/d2ZhZTK55EA2yvTy/200.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=200.webp' width='250px' height='300px'>";
+        $output .= "<img src='https://media2.giphy.com/media/d2ZhZTK55EA2yvTy/200.webp?cid=790b76115b079f19e6b19b7cc0a624173b4015791c3264c1&rid=200.webp' width='40%' height='45%'>";
         $output .= "<h4>".$movie['Title']."</h4>";
-        $output .= "<h5>".$movie['Year']."</h5>";
+        $output .= "<h6>".$movie['Year']."</h6>";
         }else {
             $output .= "<img src='" . $movie['Poster'] . "' width='40%' height='45%'>";
             $output .= "<h4>".$movie['Title']."</h4>";
-            $output .= "<h5>".$movie['Year']."</h5>";
+            $output .= "<h6>".$movie['Year']."</h6>";
         }
 
     $output .= "</div>";
