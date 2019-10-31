@@ -14,13 +14,13 @@ nav .active {
 }
 
 .col-md-3 .well{
-    height: 420px;
+    height: 25%;
     background-color: silver;
-    opacity: 40;
+    opacity: 40%;
 }
 
 .col-md-3 img{
-    height: 240px;
+    height: 10%;
 }
 
 a {
