@@ -4,7 +4,7 @@
       <div class="input-group mb-3">
         <input name="name" type="text" class="form-control" placeholder="Movie Title" required>
         <div class="input-group-append"><br>
-          <button name="submit" id= "dosearch" class="btn btn-success" type="submit">Search</button>
+          <button name="submit" id= "dosearch" class="btn btn-success text-center" type="submit">Search</button>
         </div>
       </div>
     </form>
