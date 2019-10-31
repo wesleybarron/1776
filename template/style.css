@@ -11,6 +11,8 @@ nav .active {
 
 .col-md-3 .well{
     height: 400px;
+    background-color: silver;
+    opacity: 60;
 }
 
 .col-md-3 img{
