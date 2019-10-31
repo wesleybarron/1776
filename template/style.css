@@ -9,6 +9,14 @@ nav .active {
     text-decoration: none;
 }
 
+.col-md-3 .well{
+    height: 390px;
+}
+
+.col-md-3 img{
+    height: 240px;
+}
+
 a {
     text-decoration: none;
     color: white;
