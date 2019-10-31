@@ -84,11 +84,12 @@ $url = "http://www.omdbapi.com/?s=";
 
     $output .= "</div>";
     $output .= "</div>";
-
+    $output .= "<br>";
     }
 
     $output .= "</div>";
     $output .= "</div>";
+    $output .= "<br>";
     echo $output;
 }
 
