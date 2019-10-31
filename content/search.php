@@ -16,12 +16,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script>
-  $("#dosearch").click(function(){
+  $("#dosearch").click(function(e){
     var mSearch = $("#mov_search");
     $.ajax({
       type: 'post',
       url: '../includes/search_result.php',
-      data: {"movie": movieName},
+      data: {"movie": mSearch},
       dataType: "HTML",
       success: function(data){
         $("#target_div").html(data);
