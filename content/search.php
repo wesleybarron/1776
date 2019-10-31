@@ -72,7 +72,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<br>";
         $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
         }else {
-            $output .= "<img src='" . $movie['Poster'] . "' width='50%' height='45%'>";
+            $output .= "<img src='" . $movie['Poster'] . "'>";
             $output .= "<br>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
