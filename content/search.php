@@ -18,11 +18,19 @@ function getMovie(){
 $url = "http://www.omdbapi.com/?s=";
 
     $search_key = $_POST["name"];
+    if($search_key != string){
+        echo "Please enter a valid Movie Title";
+    }
+
     $search_key = ltrim($search_key, " ");
     $search_key = ltrim($search_key, "+");
     $search_key = ltrim($search_key, ".");
     $search_key = ltrim($search_key, "-");
     $search_key = ltrim($search_key, ",");
+    $search_key = ltrim($search_key, "/");
+    $search_key = ltrim($search_key, ";");
+    $search_key = ltrim($search_key, "'");
+    $search_key = ltrim($search_key, '"');
     $search_key = strtolower($search_key);
 
     $search_key = str_replace(" ", "+", $search_key);
