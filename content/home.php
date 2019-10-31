@@ -1,4 +1,3 @@
-<div class = "row">
 <div class="mx-auto jumbotron jumbotron-fluid">
         <div class="container">
           <div class="media">
@@ -8,5 +7,4 @@
             </div>
           </div>
         </div>
-</div>
 </div>
