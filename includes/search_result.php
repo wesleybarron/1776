@@ -7,7 +7,7 @@ if (isset($_POST["movie"])){
 function performSearch($mSearch){
     $url = "http://www.omdbapi.com/?s=";
 
-    $search_key = $movieName;
+    $search_key = $mSearch;
     strtolower($search_key);
     $search_key = str_replace(" ", "+", $search_key);
     $api_key = "&apikey=d42aca4a";
