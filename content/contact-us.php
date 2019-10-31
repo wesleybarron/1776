@@ -1,3 +1,8 @@
+<div class="mx-auto">
+      <article>
+        <h2><?php page_title(); ?></h2>
+      </article>
+    </div>
 <p>Feel free to contact any of the site's developers.</p>
 <br>
 <p>Donny Matchen Matchen_Henry@ColumbusState.edu</p>

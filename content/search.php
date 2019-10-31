@@ -1,3 +1,8 @@
+<div class="mx-auto">
+      <article>
+        <h2><?php page_title(); ?></h2>
+      </article>
+    </div>
 <div class = "row">
   <div id = "search_form">
     <form id="contact" action="" method ="post">

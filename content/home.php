@@ -8,3 +8,8 @@
           </div>
         </div>
 </div>
+<div class="mx-auto">
+      <article>
+        <h2><?php page_title(); ?></h2>
+      </article>
+    </div>
