@@ -17,7 +17,7 @@
 
 <script>
   $("#dosearch").click(function(e){
-    var mSearch = $("#mov_search");
+    var mSearch = $("#mov_search").val();
     $.ajax({
       type: 'post',
       url: '../includes/search_result.php',
