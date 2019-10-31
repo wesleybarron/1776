@@ -9,14 +9,18 @@ nav .active {
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 .col-md-3 .well{
-    height: 200px;
+    height: 390px;
     background-color: silver;
-    opacity: 60;
+    opacity: 40;
 }
 
 .col-md-3 img{
-    height: 175px;
+    height: 240px;
 }
 
 a {
