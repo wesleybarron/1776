@@ -8,16 +8,21 @@ nav .active {
 .nav-link {
     text-decoration: none;
 }
-@media(min-width:960px){
+
+@media(min-width:768px){
 .col-md-3 .well{
     height: 95%;
     background-color: silver;
     opacity: 60%;
 }
 
+img.movie-poster{
+    width: 100%;
+}
+
 .col-md-3 img{
     height: 200px;
-    width: 255px;
+
 }
 }
 
