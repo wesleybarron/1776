@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Donny" src="/assets/danny.jpg">
+            <img id="Donny" src="/assets/donny.jpg">
             <h4>Donny Matchen</h4>
             </div>
         </div>
