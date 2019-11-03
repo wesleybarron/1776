@@ -9,6 +9,10 @@ nav .active {
     text-decoration: none;
 }
 
+h5 {
+    text-align: center;
+}
+
 @media(min-width:768px){
 
 #dosearch button{

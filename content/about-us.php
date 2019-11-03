@@ -7,25 +7,25 @@
             <div class="well text-center">
             <img id="Donny" src="/assets/donny.jpg" width="160px">
             </div>
-            <h4>Donny Matchen</h4>
+            <h5>Donny Matchen</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
             <img id="Anthony" src="/assets/anthony.jpg" width="160px">
             </div>
-            <h4>Anthony Obando</h4>
+            <h5>Anthony Obando</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
             <img id="Josh" src="/assets/josh.jpg" width="160px">
             </div>
-            <h4>Josh Lopez</h4>
+            <h5>Josh Lopez</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center" width="160px">
             <img id="Wes" src="/assets/wes.jpg">
             </div>
-            <h4>Wes Barron</h4>
+            <h5>Wes Barron</h5>
         </div>
     </div>
 </div>
