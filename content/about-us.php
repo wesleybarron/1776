@@ -6,8 +6,8 @@
         <div class="col-md-3">
             <div class="well text-center">
             <img id="Donny" src="/assets/donny.jpg">
-            <h4>Donny Matchen</h4>
             </div>
+            <h4>Donny Matchen</h4>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
