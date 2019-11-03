@@ -6,23 +6,25 @@
         <div class="col-md-3">
             <div class="well text-center">
             <img id="Donny" src="/assets/danny.jpg">
-            <h4>Donny Matchen
+            <h4>Donny Matchen</h4>
             </div>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Donny" src="/assets/danny.jpg">
-            <h4>Donny Matchen
+            <img id="Anthony" src="/assets/danny.jpg">
+            <h4>Anthony Obando</h4>
             </div>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Donny" src="/assets/danny.jpg">
-            <h4>Donny Matchen
+            <img id="Josh" src="/assets/danny.jpg">
+            <h4>Josh Lopez</h4>
             </div>
         </div>
-            <img id="Donny" src="/assets/danny.jpg">
-            <h4>Donny Matchen
+        <div class="col-md-3">
+            <div class="well text-center">
+            <img id="Wes" src="/assets/danny.jpg">
+            <h4>Wes Barron</h4>
             </div>
         </div>
     </div>
