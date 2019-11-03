@@ -5,24 +5,24 @@
     <div class="row">
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Donny" src="/assets/donny.jpg">
+            <img id="Donny" src="/assets/donny.jpg" width="160px">
             </div>
             <h4>Donny Matchen</h4>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Anthony" src="/assets/anthony.jpg">
+            <img id="Anthony" src="/assets/anthony.jpg" width="160px">
             </div>
             <h4>Anthony Obando</h4>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Josh" src="/assets/josh.jpg">
+            <img id="Josh" src="/assets/josh.jpg" width="160px">
             </div>
             <h4>Josh Lopez</h4>
         </div>
         <div class="col-md-3">
-            <div class="well text-center">
+            <div class="well text-center" width="160px">
             <img id="Wes" src="/assets/wes.jpg">
             </div>
             <h4>Wes Barron</h4>
