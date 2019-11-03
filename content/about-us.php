@@ -7,10 +7,20 @@
             <div class="well text-center">
             <img id="Donny" src="/assets/danny.jpg">
             <h4>Donny Matchen
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="well text-center">
             <img id="Donny" src="/assets/danny.jpg">
             <h4>Donny Matchen
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="well text-center">
             <img id="Donny" src="/assets/danny.jpg">
             <h4>Donny Matchen
+            </div>
+        </div>
             <img id="Donny" src="/assets/danny.jpg">
             <h4>Donny Matchen
             </div>
