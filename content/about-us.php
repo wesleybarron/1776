@@ -11,21 +11,21 @@
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Anthony" src="/assets/danny.jpg">
+            <img id="Anthony" src="/assets/anthony.jpg">
+            </div>
             <h4>Anthony Obando</h4>
-            </div>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Josh" src="/assets/danny.jpg">
+            <img id="Josh" src="/assets/josh.jpg">
+            </div>
             <h4>Josh Lopez</h4>
-            </div>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Wes" src="/assets/danny.jpg">
-            <h4>Wes Barron</h4>
+            <img id="Wes" src="/assets/wes.jpg">
             </div>
+            <h4>Wes Barron</h4>
         </div>
     </div>
 </div>
