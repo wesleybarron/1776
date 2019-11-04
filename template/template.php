@@ -41,8 +41,9 @@
       </article>
     </div>
   </div>
-  <div>
-    <div>
+  <div class="row">
+    <div class="mx-auto">
+    <br>
     <br>
       <footer>
           <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
