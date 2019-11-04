@@ -99,19 +99,17 @@ getMovie();
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
 
-    var movieId = document.getElementById("movie-id");
+    var movieId = document.getElementById("movie-id").value;
     console.log(movieId);
 </script>
 
 
 <script>
 
-
-
      $('#my-button').click(function (e){
           $.ajax({
               type: 'POST',
-              url: 'randomComic',
+              url: "http://www.omdbapi.com/?i=" + ,
               data: {data : true},
               //dataType:"json",
               success: function(data)
