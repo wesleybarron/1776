@@ -100,10 +100,10 @@ getMovie();
     hideJumbo.style.display = "none";
 
     var movieId = document.getElementById("movie-id").value;
-    console.log(movieId);
+    console.log(movieId.valueOf());
 </script>
 
-
+/*
 <script>
 
      $('#my-button').click(function (e){
@@ -128,4 +128,4 @@ getMovie();
       }); // Function end
     });
 
-</script>
+</script> */
