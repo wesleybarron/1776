@@ -11,6 +11,31 @@
   </div>
 </div>
 
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 id="movie-title" class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Modal body..
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 
 <?php
@@ -75,7 +100,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
             $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
-            $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
+            $output .= '<button id="my-button" type="button" class="btn btn-info">Movie Details</button>';
             $output .= "<br><br>";
         }
 
@@ -99,23 +124,23 @@ getMovie();
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
 
-    var movieId = document.getElementById("movie-id");
+    var movieId = document.getElementById("movie-id").innerHTML;
     console.log(movieId.valueOf());
-</script>
 
-/*
-<script>
+
+
+
 
      $('#my-button').click(function (e){
           $.ajax({
               type: 'POST',
-              url: "http://www.omdbapi.com/?i=" + ,
+              url: "http://www.omdbapi.com/?i=" + movieId,
               data: {data : true},
               //dataType:"json",
               success: function(data)
               {
                 console.log(data);
-                $('#random-comic').prop('src', data.img); //random image sent to src attribute of image tag
+                $('#movie-title').html(data.Title);
                 $('#comic-title').html(data.title); //random comic title sent to h3 tag
                 $('#comic-year').html(data.year); //random comic year sent to h4 tag
               },
