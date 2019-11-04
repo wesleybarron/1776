@@ -98,13 +98,15 @@ getMovie();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
+
+    var movieId = document.getElementById("movie-id");
+    console.log(movieId);
 </script>
 
 
 <script>
 
-    var movieId = document.getElementById("movie-id");
-    console.log(movieId);
+
 
      $('#my-button').click(function (e){
           $.ajax({
