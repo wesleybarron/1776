@@ -22,8 +22,8 @@
             <h5>Josh Lopez</h5>
         </div>
         <div class="col-md-3">
-            <div class="well text-center" width="160px">
-            <img id="Wes" src="/assets/wes.jpg">
+            <div class="well text-center">
+            <img id="Wes" src="/assets/wes.jpg" width="160px">
             </div>
             <h5>Wes Barron</h5>
         </div>
