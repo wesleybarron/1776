@@ -5,25 +5,25 @@
     <div class="row">
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Donny" src="/assets/donny.jpg" width="160px">
+            <img id="Donny" src="/assets/donny.jpg" width="160px" height="220px">
             </div>
             <h5>Donny Matchen</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Anthony" src="/assets/anthony.jpg" width="160px">
+            <img id="Anthony" src="/assets/anthony.jpg" width="160px" height="220px">
             </div>
             <h5>Anthony Obando</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Josh" src="/assets/josh.jpg" width="160px">
+            <img id="Josh" src="/assets/josh.jpg" width="160px" height="220px">
             </div>
             <h5>Josh Lopez</h5>
         </div>
         <div class="col-md-3">
             <div class="well text-center">
-            <img id="Wes" src="/assets/wes.jpg" width="160px">
+            <img id="Wes" src="/assets/wes.jpg" width="160px" height="220px">
             </div>
             <h5>Wes Barron</h5>
         </div>
