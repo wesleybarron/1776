@@ -126,10 +126,10 @@ getMovie();
 
     var movieId = document.getElementById("movie-id").innerHTML;
     console.log(movieId.valueOf());
+</script>
 
 
-
-
+<script>
 
      $('#my-button').click(function (e){
           $.ajax({
@@ -153,4 +153,4 @@ getMovie();
       }); // Function end
     });
 
-</script> */
+</script>
