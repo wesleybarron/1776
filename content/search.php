@@ -142,7 +142,7 @@ getMovie();
               type: 'GET',
               url: parsedUrl,
               data: {data : true},
-              dataType:"json",
+              //dataType:"json",
               success: function(data)
               {
                 console.log(data);
