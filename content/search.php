@@ -18,7 +18,7 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 id="movie-title" class="modal-title">Modal Heading</h4>
+        <h4 id="movie-title" class="modal-title"></h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
@@ -100,7 +100,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
             $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
-            $output .= '<button id="my-button" type="button" class="btn btn-info">Movie Details</button>';
+            $output .= '<button id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
             $output .= "<br><br>";
         }
 
