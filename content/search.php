@@ -96,7 +96,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<h6>".$movie['Year']."</h6>";
         $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
         $output .= "<br>";
-        $output .= '<button id="my-button" type="button" class="btn btn-info">Movie Details</button>';
+        $output .= '<button id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
         $output .= "<br><br>";
         }else {
             $output .= "<img class='movie-poster' src='" . $movie['Poster'] . "'>";
@@ -135,10 +135,10 @@ getMovie();
      $(document).ready(function() {
      $('#my-button').click(function (e){
           $.ajax({
-              type: 'POST',
+              type: 'GET',
               url: "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a",
               data: {data : true},
-              //dataType:"json",
+              dataType:"json",
               success: function(data)
               {
                 console.log(data);
