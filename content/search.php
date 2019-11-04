@@ -93,4 +93,7 @@ getMovie();
 }
 ?>
 
-
+<script>
+    var hideJumbo = document.getElementById("jumbo");
+    hideJumbo.style.display = "none";
+</script>
