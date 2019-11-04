@@ -74,6 +74,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<br>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
+            $output .= "<p>" .$movie['omdbID']."</p>";
             $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
             $output .= "<br><br>";
         }
@@ -97,9 +98,10 @@ getMovie();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
+</script>
 
 
-
+<script>
 
      $('#my-button').click(function (e){
           $.ajax({
@@ -122,4 +124,5 @@ getMovie();
           return false; // So the button click does not refresh the page
       }); // Function end
     });
+
 </script>
