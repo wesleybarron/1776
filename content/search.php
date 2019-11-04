@@ -132,15 +132,15 @@ getMovie();
      $('#my-button').click(function (e){
           $.ajax({
               type: 'POST',
-              url: "http://www.omdbapi.com/?i=" + movieId,
+              url: "http://www.omdbapi.com/?i=" + movieId.valueOf(),
               data: {data : true},
               //dataType:"json",
               success: function(data)
               {
                 console.log(data);
                 $('#movie-title').html(data.Title);
-                $('#comic-title').html(data.title); //random comic title sent to h3 tag
-                $('#comic-year').html(data.year); //random comic year sent to h4 tag
+                //$('#comic-title').html(data.title); //random comic title sent to h3 tag
+                //$('#comic-year').html(data.year); //random comic year sent to h4 tag
               },
               error: function()
               {
