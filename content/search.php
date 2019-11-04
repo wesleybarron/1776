@@ -91,14 +91,16 @@ $url = "http://www.omdbapi.com/?s=";
     $output .= "</div>";
     $output .= "<br><br>";
 
-    //<!-- The Modal -->
-        $output .= '<div class="modal" id="myModal">
+    echo $output;
+
+     //<!-- The Modal -->
+                    '<div class="modal" id="myModal">
                     <div class="modal-dialog">
                     <div class="modal-content">
 
       <!-- Modal Header -->
                     <div class="modal-header">
-                    <h4 id="movie-title" class="modal-title">Title</h4>
+                    <h4 id="movie-title" class="modal-title"></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
@@ -119,8 +121,6 @@ $url = "http://www.omdbapi.com/?s=";
                 </div>
             </div>
         </div>';
-
-    echo $output;
 }
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
