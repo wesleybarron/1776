@@ -18,7 +18,7 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 id="movie-title" class="modal-title"></h4>
+        <h4 id="movie-title" class="modal-title">Title</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
