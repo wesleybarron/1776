@@ -65,7 +65,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<br>";
         $output .= "<h4>".$movie['Title']."</h4>";
         $output .= "<h6>".$movie['Year']."</h6>";
-        $output .= "<p>" .$movie['omdbID']."</p>";
+        $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
         $output .= "<br>";
         $output .= '<button id="my-button" type="button" class="btn btn-info">Movie Details</button>';
         $output .= "<br><br>";
@@ -74,7 +74,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<br>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
-            $output .= "<p>" .$movie['imdbID']."</p>";
+            $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
             $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
             $output .= "<br><br>";
         }
@@ -102,6 +102,9 @@ getMovie();
 
 
 <script>
+
+    var movieId = document.getElementById("movie-id");
+    console.log(movieId);
 
      $('#my-button').click(function (e){
           $.ajax({
