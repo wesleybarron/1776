@@ -24,7 +24,11 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        Modal body..
+        Rating: <p id="movie-rating"></p>
+        <p id="movie-rating"></p>
+        <p id="movie-rating"></p>
+        <p id="movie-rating"></p>
+        <p id="movie-rating"></p>
       </div>
 
       <!-- Modal footer -->
@@ -132,14 +136,14 @@ getMovie();
      $('#my-button').click(function (e){
           $.ajax({
               type: 'POST',
-              url: "http://www.omdbapi.com/?i=" + movieId.valueOf(),
+              url: "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a",
               data: {data : true},
               //dataType:"json",
               success: function(data)
               {
                 console.log(data);
                 $('#movie-title').html(data.Title);
-                //$('#comic-title').html(data.title); //random comic title sent to h3 tag
+                $('#movie-rating').html(data.Rated);
                 //$('#comic-year').html(data.year); //random comic year sent to h4 tag
               },
               error: function()
