@@ -74,7 +74,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<br>";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
-            $output .= "<p>" .$movie['omdbID']."</p>";
+            $output .= "<p>" .$movie['imdbID']."</p>";
             $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
             $output .= "<br><br>";
         }
