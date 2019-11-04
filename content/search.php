@@ -144,11 +144,11 @@ getMovie();
               type: get,
               url: parsedUrl,
               data: {data : true},
-              dataType:"json",
+              //dataType:"json",
               success: function(data)
               {
                 console.log(data);
-                $('#movie-title').innerhtml(data.Title);
+                $("#movie-title").innerhtml(data.Title);
                 $('#movie-rating').html(data.Rated);
                 //$('#comic-year').html(data.year); //random comic year sent to h4 tag
               },
