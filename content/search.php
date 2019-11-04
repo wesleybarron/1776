@@ -99,7 +99,7 @@ getMovie();
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
 
-    var movieId = document.getElementById("movie-id").value;
+    var movieId = document.getElementById("movie-id");
     console.log(movieId.valueOf());
 </script>
 
