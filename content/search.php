@@ -65,8 +65,9 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<br>";
         $output .= "<h4>".$movie['Title']."</h4>";
         $output .= "<h6>".$movie['Year']."</h6>";
+        $output .= "<p>" .$movie['omdbID']."</p>";
         $output .= "<br>";
-        $output .= '<button type="button" class="btn btn-info">Movie Details</button>';
+        $output .= '<button id="my-button" type="button" class="btn btn-info">Movie Details</button>';
         $output .= "<br><br>";
         }else {
             $output .= "<img class='movie-poster' src='" . $movie['Poster'] . "'>";
@@ -96,4 +97,29 @@ getMovie();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
+
+
+
+
+     $('#my-button').click(function (e){
+          $.ajax({
+              type: 'POST',
+              url: 'randomComic',
+              data: {data : true},
+              //dataType:"json",
+              success: function(data)
+              {
+                console.log(data);
+                $('#random-comic').prop('src', data.img); //random image sent to src attribute of image tag
+                $('#comic-title').html(data.title); //random comic title sent to h3 tag
+                $('#comic-year').html(data.year); //random comic year sent to h4 tag
+              },
+              error: function()
+              {
+                  alert("Failed to get data.");
+            }
+          }); // Ajax close
+          return false; // So the button click does not refresh the page
+      }); // Function end
+    });
 </script>
