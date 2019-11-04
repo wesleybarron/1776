@@ -132,7 +132,7 @@ getMovie();
     //console.log(movieId.valueOf());
 
     var imdbIdUrl = "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a";
-    var parsedUrl = JSON.parse(imdbIdUrl);
+    var parsedUrl = JSON.stringify(imdbIdUrl);
     console.log(parsedUrl);
 
 
@@ -140,7 +140,7 @@ getMovie();
      $('#my-button').click(function (e){
           $.ajax({
               type: get,
-              url: imdbIdUrl,
+              url: parsedUrl,
               data: {data : true},
               dataType:"json",
               success: function(data)
