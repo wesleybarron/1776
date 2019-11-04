@@ -147,8 +147,8 @@ getMovie();
               dataType:"json",
               success: function(data)
               {
-                //console.log(data);
-                $('#movie-title').html(data.Title);
+                console.log(data);
+                $('#movie-title').innerhtml(data.Title);
                 $('#movie-rating').html(data.Rated);
                 //$('#comic-year').html(data.year); //random comic year sent to h4 tag
               },
