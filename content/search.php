@@ -24,7 +24,7 @@
 
       <!-- Modal body -->
       <div class="modal-body">
-        Rating: <p id="movie-rating"></p>
+        <h6>Rating:</h6 &nbsp;><p id="movie-rating"></p>
         <p id="movie-rating"></p>
         <p id="movie-rating"></p>
         <p id="movie-rating"></p>
@@ -139,13 +139,13 @@ getMovie();
      $(document).ready(function() {
      $('#my-button').click(function (e){
           $.ajax({
-              type: 'GET',
+              type: movieId.valueOf(),
               url: imdbIdUrl,
               data: {data : true},
-              //dataType:"json",
+              dataType:"json",
               success: function(data)
               {
-                console.log(data);
+                //console.log(data);
                 $('#movie-title').html(data.Title);
                 $('#movie-rating').html(data.Rated);
                 //$('#comic-year').html(data.year); //random comic year sent to h4 tag
