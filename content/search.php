@@ -129,9 +129,8 @@ getMovie();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
-    function movieId(){
+
     var movieId = document.getElementById("movie-id").innerHTML;
-    }
     //console.log(movieId.valueOf());
 
     var imdbIdUrl = "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a";
