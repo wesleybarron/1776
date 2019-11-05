@@ -99,7 +99,7 @@ getMovie();
 function getMovieID(){
 $url = "http://www.omdbapi.com/?i=";
 
-    $search_key = $_GET["movie-id"];
+    $search_key = movieId();
 
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $search_key . $api_key;
@@ -168,7 +168,7 @@ getMovieID();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
-    function getMovieId(){
+    function movieId(){
     var movieId = document.getElementById("movie-id").innerHTML;
     }
     //console.log(movieId.valueOf());
