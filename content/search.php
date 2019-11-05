@@ -99,7 +99,7 @@ getMovie();
 function getMovieID(){
 $url = "http://www.omdbapi.com/?i=";
 
-    $search_key = $_GET["name"];
+    $search_key = $_GET["movie-id"];
 
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $search_key . $api_key;
