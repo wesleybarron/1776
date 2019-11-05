@@ -156,9 +156,9 @@ getMovie();
               {
                   alert("Failed to get data.");
             }
-          }); // Ajax close
-          return false; // So the button click does not refresh the page
+          }); // Ajax close */
+         // return false; // So the button click does not refresh the page
       }); // Function end
     });
-*/
+
 </script>
