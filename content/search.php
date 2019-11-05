@@ -142,7 +142,8 @@ getMovie();
      //$('#my-button').click(function (e){
           $.ajax({
               type: "GET",
-              url: parsedUrl
+              url: imdbIdUrl,
+              dataType: "json"
              /* data: {data : true},
               dataType:"json",
               success: function(data)
