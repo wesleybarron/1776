@@ -25,7 +25,7 @@
       <!-- Modal body -->
                     <div class="modal-body">
                     <h6>Rating:</h6 &nbsp;><p id="movie-rating"></p>
-                    <p id="movie-rating"></p>
+                    <p data-id=getMovieId(); id="movie-rating"></p>
                     <p id="movie-rating"></p>
                     <p id="movie-rating"></p>
                     <p id="movie-rating"></p>
@@ -96,7 +96,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<h6>".$movie['Year']."</h6>";
         $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
         $output .= "<br>";
-        $output .= '<button name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
+        $output .= '<button formaction="/includes/search_result.php" data-movie-num="getMovieId();" name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
         $output .= "<br><br>";
 
         }else {
@@ -129,8 +129,9 @@ getMovie();
 <script>
     var hideJumbo = document.getElementById("jumbo");
     hideJumbo.style.display = "none";
-
+    function getMovieId(){
     var movieId = document.getElementById("movie-id").innerHTML;
+    }
     //console.log(movieId.valueOf());
 
     var imdbIdUrl = "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a";
