@@ -135,8 +135,8 @@ getMovie();
     //console.log(movieId.valueOf());
 
     var imdbIdUrl = "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a";
-    var parsedUrl = JSON.parse(imdbIdUrl);
-    console.log(parsedUrl);
+    //var parsedUrl = JSON.parse(imdbIdUrl);
+    console.log(imdbIdUrl);
 
 
      $(document).ready(function() {
