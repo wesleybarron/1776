@@ -25,7 +25,7 @@
       <!-- Modal body -->
                     <div class="modal-body">
                     <h6>Rating:</h6 &nbsp;><p id="movie-rating"></p>
-                    <p data-id=getMovieId(); id="movie-rating"></p>
+                    <p data-id="getMovieId" id="movie-rating"></p>
                     <p id="movie-rating"></p>
                     <p id="movie-rating"></p>
                     <p id="movie-rating"></p>
