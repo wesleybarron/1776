@@ -142,9 +142,9 @@ getMovie();
      $('#my-button').click(function (e){
           $.ajax({
               type: "GET",
-              url: imdbIdUrl,
-              data: {data : true},
-              //dataType:"json",
+              url: "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a",
+             /* data: {data : true},
+              dataType:"json",
               success: function(data)
               {
                 console.log(data);
@@ -160,5 +160,5 @@ getMovie();
           return false; // So the button click does not refresh the page
       }); // Function end
     });
-
+*/
 </script>
