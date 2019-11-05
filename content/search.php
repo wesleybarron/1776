@@ -142,7 +142,7 @@ getMovie();
      $('#my-button').click(function (e){
           $.ajax({
               type: "GET",
-              url: "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a",
+              url: "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a"
              /* data: {data : true},
               dataType:"json",
               success: function(data)
