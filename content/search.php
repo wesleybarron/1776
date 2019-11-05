@@ -99,11 +99,11 @@ getMovie();
 function getMovieID(){
 $url = "http://www.omdbapi.com/?i=";
 
-    $search_key = $_GET["movie-id"];
+    $search_key = $_GET["$movie['imdbID']"];
 
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $search_key . $api_key;
-    //echo($search_url);
+    echo($search_url);
     $handle = curl_init();
     curl_setopt($handle, CURLOPT_URL, $search_url);
     curl_setopt_array($handle,
@@ -116,7 +116,7 @@ $url = "http://www.omdbapi.com/?i=";
     $response = json_decode($output, true);
     curl_close($handle);
 
-    foreach ($response['Search'] as $movie) {
+    foreach ($response['imdbID'] as $movie) {
 
     $output .= "<div>";
 
