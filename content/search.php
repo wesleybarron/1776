@@ -96,7 +96,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<h6>".$movie['Year']."</h6>";
         $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
         $output .= "<br>";
-        $output .= '<button id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
+        $output .= '<button name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
         $output .= "<br><br>";
 
         }else {
@@ -105,7 +105,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
             $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
-            $output .= '<button id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
+            $output .= '<button name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
             $output .= "<br><br>";
         }
 
@@ -141,8 +141,8 @@ getMovie();
      $(document).ready(function() {
      $('#my-button').click(function (e){
           $.ajax({
-              type: get,
-              url: parsedUrl,
+              type: "get",
+              url: "includes/search_result.php",
               data: {data : true},
               //dataType:"json",
               success: function(data)
