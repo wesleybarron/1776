@@ -142,8 +142,8 @@ getMovie();
      $(document).ready(function() {
      $('#my-button').click(function (e){
           $.ajax({
-              type: "get",
-              url: "includes/search_result.php",
+              type: "GET",
+              url: imdbIdUrl,
               data: {data : true},
               //dataType:"json",
               success: function(data)
