@@ -11,36 +11,6 @@
   </div>
 </div>
 
-      <!-- The Modal -->
-                    <div class="modal" id="myModal">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-
-      <!-- Modal Header -->
-                    <div class="modal-header">
-                    <h4 id="movie-title" class="modal-title"></h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-      <!-- Modal body -->
-                    <div class="modal-body">
-                    <h6>Rating:</h6 &nbsp;><p id="movie-rating"></p>
-                    <p data-id="getMovieId" id="movie-rating"></p>
-                    <p id="movie-rating"></p>
-                    <p id="movie-rating"></p>
-                    <p id="movie-rating"></p>
-                    </div>
-
-      <!-- Modal footer -->
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
 
 <?php
 function getMovie(){
@@ -96,7 +66,7 @@ $url = "http://www.omdbapi.com/?s=";
         $output .= "<h6>".$movie['Year']."</h6>";
         $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
         $output .= "<br>";
-        $output .= '<button formaction="/includes/search_result.php" data-movie-num="getMovieId();" name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
+        $output .= '<button formaction="" name="movie-id" method="get" data-movie-num="'.$movie['imdbID'].'" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
         $output .= "<br><br>";
 
         }else {
@@ -105,7 +75,7 @@ $url = "http://www.omdbapi.com/?s=";
             $output .= "<h4>".$movie['Title']."</h4>";
             $output .= "<h6>".$movie['Year']."</h6>";
             $output .= "<p id='movie-id'>" .$movie['imdbID']."</p>";
-            $output .= '<button name="more-info" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
+            $output .= '<button formaction="" name="movie-id" method="get" data-movie-num="'.$movie['imdbID'].'" id="my-button" type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Movie Details</button>';
             $output .= "<br><br>";
         }
 
@@ -124,6 +94,75 @@ $url = "http://www.omdbapi.com/?s=";
 if($_SERVER['REQUEST_METHOD']=='POST'){
 getMovie();
 }
+
+
+function getMovieID(){
+$url = "http://www.omdbapi.com/?i=";
+
+    $search_key = $_GET["movie-id"];
+
+    $api_key = "&apikey=d42aca4a";
+    $search_url = $url . $search_key . $api_key;
+    //echo($search_url);
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $search_url);
+    curl_setopt_array($handle,
+    array(
+        CURLOPT_URL => $search_url,
+        CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+
+    foreach ($response['Search'] as $movie) {
+
+    $output .= "<div>";
+
+
+    $output .= '<!-- The Modal -->
+                    <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+
+      <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 id="movie-title" class="modal-title">'.$movie["Title"].'</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+      <!-- Modal body -->
+                    <div class="modal-body">
+                    <h6>Rating:</h6 &nbsp;><p id="movie-rating"></p>
+                    <p data-id="getMovieId" id="movie-rating"></p>
+                    <p id="movie-rating"></p>
+                    <p id="movie-rating"></p>
+                    <p id="movie-rating"></p>
+                    </div>
+
+      <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>';
+
+
+    $output .= "</div>";
+    $output .= "<br>";
+    }
+
+    $output .= "<br><br>";
+
+    echo $output;
+}
+
+if($_SERVER['REQUEST_METHOD']=='GET'){
+getMovieID();
+}
 ?>
 
 <script>
@@ -138,7 +177,7 @@ getMovie();
     var parsedUrl = JSON.stringify(imdbIdUrl);
     console.log(parsedUrl);
 
-
+/*
      $(document).ready(function() {
      $('#my-button').click(function (e){
           $.ajax({
@@ -160,6 +199,6 @@ getMovie();
           }); // Ajax close
           return false; // So the button click does not refresh the page
       }); // Function end
-    });
+    });  */
 
 </script>
