@@ -4,8 +4,6 @@
     $url = "http://www.omdbapi.com/?i=";
 
     $search_key = $_GET["more-info"];
-    //strtolower($search_key);
-    //$search_key = str_replace(" ", "+", $search_key);
     $api_key = "&apikey=d42aca4a";
     $search_url = $url . $search_key . $api_key;
 
