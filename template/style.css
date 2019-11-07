@@ -9,6 +9,36 @@ nav .active {
     text-decoration: none;
 }
 
+h5 {
+    text-align: center;
+}
+
+#movie-id {
+    display: none;
+}
+
+@media(min-width:768px){
+
+#dosearch button{
+    text-align: center;
+}
+
+.col-md-3 .well{
+    height: 95%;
+    background-color: silver;
+    opacity: 60%;
+}
+
+img.movie-poster{
+    width: 100%;
+}
+
+.col-md-3 img{
+    height: 200px;
+
+}
+}
+
 a {
     text-decoration: none;
     color: white;
