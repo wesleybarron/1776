@@ -134,17 +134,31 @@ getMovie();
     //console.log(movieId.valueOf());
 
     var imdbIdUrl = "http://www.omdbapi.com/?i=" + movieId.valueOf() + "&apikey=d42aca4a";
-    var parsedUrl = JSON.parse(imdbIdUrl);
+    //var parsedUrl = JSON.parse(imdbIdUrl);
     console.log(imdbIdUrl);
+  
+    document.getElementById("my-button").addEventListener
+    ('click', getModalData);
 
-
+    function getModalData(){
+      fetch(imdbIdUrl)
+      .then(function(res){
+       return res.json();
+      })
+      .then(function(data){
+       console.log(data);
+      });
+    }
+   
+  
+  /*
      $(document).ready(function() {
      //$('#my-button').click(function (e){
           $.ajax({
               type: "GET",
               url: imdbIdUrl,
               dataType: "json"
-             /* data: {data : true},
+              data: {data : true},
               dataType:"json",
               success: function(data)
               {
